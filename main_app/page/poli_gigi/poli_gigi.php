@@ -4,7 +4,7 @@
             <div class="card-body pb-0">
                 <div class="row">
                     <!-- Card -->
-                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
+                    <!-- <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column"> 
                         <div class="card bg-light d-flex flex-fill">
                             <div class="card-header text-muted border-bottom-0">
                             Antrian Poli Gigi Konservasi<h2 class="lead"><b>drg. Inggar Sp. Kg</b></h2>
@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <!-- /.card -->
                     <!-- Card -->
                     <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
@@ -92,7 +92,7 @@
                                         <p class="text-muted text-sm"><b>Total Antrian Sudah Dilayani: </b><h4> <?php echo $total_sudah_dilayani; ?> </h4></p>
                                     </div>
                                     <div class="col-5 text-center">
-                                    <img src="../assets/img/dokter/gigi-U0057.png" alt="user-avatar" class="img-circle img-fluid" style="width: 130px; height: 120px; object-fit: cover;">
+                                    <img src="../assets/img/dokter/gigi-U0057.png" alt="user-avatar" class="img-circle img-fluid" style="width: 140px; height: 120px; object-fit: cover; object-fit: contain;">
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                                     <a href="#" class="btn btn-sm bg-teal">
                                     <i class="fas fa-comments"></i>
                                     </a>
-                                    <a href="#" class="btn btn-sm btn-primary">
+                                    <a href="main_app.php?page=view_poli_gigi_U0057" class="btn btn-sm btn-primary">
                                     <i class="fas fa-user"></i> View Profile
                                     </a>
                                 </div>
@@ -145,7 +145,7 @@
                                         <p class="text-muted text-sm"><b>Total Antrian Sudah Dilayani: </b><h4> <?php echo $total_sudah_dilayani; ?> </h4></p>
                                     </div>
                                     <div class="col-5 text-center">
-                                    <img src="../assets/dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid" style="width: 130px; height: 120px; object-fit: cover;">
+                                    <img src="../assets/img/dokter/gigi-U0065.png" alt="user-avatar" class="img-circle img-fluid" style="width: 130px; height: 120px; object-fit: cover; object-fit: contain;">
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
                                     <a href="#" class="btn btn-sm bg-teal">
                                     <i class="fas fa-comments"></i>
                                     </a>
-                                    <a href="#" class="btn btn-sm btn-primary">
+                                    <a href="main_app.php?page=view_poli_gigi_U0065" class="btn btn-sm btn-primary">
                                     <i class="fas fa-user"></i> View Profile
                                     </a>
                                 </div>
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                     <!-- /.card -->
-                     <!-- Card -->
+                    <!-- Card -->
                     <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
                         <div class="card bg-light d-flex flex-fill">
                             <div class="card-header text-muted border-bottom-0">
@@ -198,7 +198,7 @@
                                         <p class="text-muted text-sm"><b>Total Antrian Sudah Dilayani: </b><h4> <?php echo $total_sudah_dilayani; ?> </h4></p>
                                     </div>
                                     <div class="col-5 text-center">
-                                    <img src="../assets/dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid" style="width: 130px; height: 120px; object-fit: cover;">
+                                    <img src="../assets/img/dokter/gigi-U0043.png" alt="user-avatar" class="img-circle img-fluid" style="width: 130px; height: 120px; object-fit: cover; object-fit: contain;">
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@
                                     <a href="#" class="btn btn-sm bg-teal">
                                     <i class="fas fa-comments"></i>
                                     </a>
-                                    <a href="#" class="btn btn-sm btn-primary">
+                                    <a href="main_app.php?page=view_poli_gigi_U0043" class="btn btn-sm btn-primary">
                                     <i class="fas fa-user"></i> View Profile
                                     </a>
                                 </div>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     <!-- /.card -->
-                      <!-- Card -->
+                    <!-- Card -->
                     <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
                         <div class="card bg-light d-flex flex-fill">
                             <div class="card-header text-muted border-bottom-0">
@@ -251,7 +251,7 @@
                                         <p class="text-muted text-sm"><b>Total Antrian Sudah Dilayani: </b><h4> <?php echo $total_sudah_dilayani; ?> </h4></p>
                                     </div>
                                     <div class="col-5 text-center">
-                                    <img src="../assets/dist/img/user1-128x128.jpg" alt="user-avatar" class="img-circle img-fluid" style="width: 130px; height: 120px; object-fit: cover;">
+                                    <img src="../assets/img/dokter/gigi-U0042.png" alt="user-avatar" class="img-circle img-fluid" style="width: 130px; height: 120px; object-fit: cover; object-fit: contain;">
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +260,7 @@
                                     <a href="#" class="btn btn-sm bg-teal">
                                     <i class="fas fa-comments"></i>
                                     </a>
-                                    <a href="#" class="btn btn-sm btn-primary">
+                                    <a href="main_app.php?page=view_poli_gigi_U0042" class="btn btn-sm btn-primary">
                                     <i class="fas fa-user"></i> View Profile
                                     </a>
                                 </div>

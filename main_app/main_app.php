@@ -9,7 +9,7 @@ if (isset($_GET['page'])){ $page = $_GET['page']; }
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Antrian Poli | IT-RSPI</title>
-  <link rel="icon" href="../assets/img/1.jpg">
+  <link rel="icon" href="../assets/img/logo.png" type="image/png">
 
     <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -37,49 +37,49 @@ if (isset($_GET['page'])){ $page = $_GET['page']; }
   <link rel="stylesheet" href="../assets/plugins/toastr/toastr.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <style>
-#splide3d {
-    max-width: 900px;
-    margin: 32px auto 0 auto;
-}
-.splide__slide img {
-    width: 100%;
-    height: 320px;
-    object-fit: contain;
-    border-radius: 24px;
-    transition: transform 0.4s cubic-bezier(.17,.67,.83,.67), box-shadow 0.4s;
-}
-@media (max-width: 900px) {
-    #splide3d {
-        max-width: 98vw;
-    }
-    .splide__slide img {
-        height: 520px;
-        border-radius: 16px;
-        object-fit: contain;
-        transition: transform 0.4s cubic-bezier(.17,.67,.83,.67), box-shadow 0.4s;
-    }
-}
-@media (max-width: 600px) {
-    .splide__slide img {
-        height: 390px;
-        border-radius: 12px;
-        object-fit: contain;
-        transition: transform 0.4s cubic-bezier(.17,.67,.83,.67), box-shadow 0.4s;
-    }
-}
-.splide__slide img.zoomed {
-  transform: scale(1.25);
-  z-index: 10;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
-}
-</style>
+  #splide3d {
+      max-width: 900px;
+      margin: 32px auto 0 auto;
+  }
+  .splide__slide img {
+      width: 100%;
+      height: 320px;
+      object-fit: contain;
+      border-radius: 24px;
+      transition: transform 0.4s cubic-bezier(.17,.67,.83,.67), box-shadow 0.4s;
+  }
+  @media (max-width: 900px) {
+      #splide3d {
+          max-width: 98vw;
+      }
+      .splide__slide img {
+          height: 520px;
+          border-radius: 16px;
+          object-fit: contain;
+          transition: transform 0.4s cubic-bezier(.17,.67,.83,.67), box-shadow 0.4s;
+      }
+  }
+  @media (max-width: 600px) {
+      .splide__slide img {
+          height: 390px;
+          border-radius: 12px;
+          object-fit: contain;
+          transition: transform 0.4s cubic-bezier(.17,.67,.83,.67), box-shadow 0.4s;
+      }
+  }
+  .splide__slide img.zoomed {
+    transform: scale(1.25);
+    z-index: 10;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  }
+  </style>
   
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="../assets/img/1.jpg" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src="../assets/img/logo.png" alt="AdminLTELogo" height="60" width="60">
   </div>
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white" style="background:#5cd5fb;">
@@ -121,7 +121,7 @@ if (isset($_GET['page'])){ $page = $_GET['page']; }
   <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background:rgb(217, 221, 224, 1)">
     <!-- Brand Logo -->
     <a href="dashboard_staff.php?unit=beranda" class="brand-link" style="background:rgb(92, 213, 251, 1)">
-      <img src="../assets/img/icon.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="../assets/img/logo.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">IT - RSPI</span>
     </a>
 
