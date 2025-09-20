@@ -7,27 +7,35 @@
                     <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch flex-column">
                         <div class="card bg-light d-flex flex-fill">
                             <div class="card-header text-muted border-bottom-0">
-                            Antrian Poli Anak Umum<h2 class="lead"><b>dr. Riyan aditya pradana, S.Kom</b></h2>
+                            Antrian Poli Gigi Konservasi<h2 class="lead"><b>drg. Inggar Sp. Kg</b></h2>
                             </div>
                             <div class="card-body pt-0">
                                 <div class="row">
                                     <div class="col-7">
                                         <?php
-                                            
-                                        $today = date('Y/m/d'); // Sesuaikan dengan format di database
-                                        // Total antrian yang sudah dilayani hari ini di poli anak umum
-                                        $sql_sudah = "SELECT COUNT(DISTINCT no_rawat) as total FROM reg_periksa WHERE kd_poli = 'U0002' AND tgl_registrasi = '$today' AND stts != 'Belum'";
-                                        $result_sudah = $config->query($sql_sudah);
-                                        $row_sudah = $result_sudah->fetch_assoc();
-                                        $total_sudah_dilayani = $row_sudah['total'] ?? 0;
-
-                                        // Nomor antrian yang sedang dilayani (stts = 'Sedang Diperiksa')
-                                        $sql_sedang = "SELECT no_reg FROM reg_periksa WHERE kd_poli = 'U0002' AND tgl_registrasi = '$today' AND stts = 'Sedang Diperiksa' ORDER BY jam_reg LIMIT 1";
+                                        $today = date('Y-m-d'); // Format sesuai database
+                                        $kd_poli = 'U0052';
+                                        // Ambil nomor antrian yang sedang dilayani (stts = 'Sedang Diperiksa')
+                                        $sql_sedang = "SELECT reg_periksa.no_reg, pasien.nm_pasien FROM reg_periksa JOIN pasien ON pasien.no_rkm_medis = reg_periksa.no_rkm_medis WHERE reg_periksa.kd_poli = '$kd_poli' AND reg_periksa.tgl_registrasi = '$today' AND reg_periksa.stts = 'Sedang Diperiksa' ORDER BY reg_periksa.jam_reg LIMIT 1";
                                         $result_sedang = $config->query($sql_sedang);
                                         $row_sedang = $result_sedang->fetch_assoc();
                                         $sedang_dilayani = $row_sedang['no_reg'] ?? '-';
+                                        $nama_pasien_sedang = $row_sedang['nm_pasien'] ?? '';
+
+                                        // Total seluruh antrian hari ini
+                                        $sql_total = "SELECT COUNT(DISTINCT reg_periksa.no_rawat) as total FROM reg_periksa WHERE reg_periksa.kd_poli = '$kd_poli' AND reg_periksa.tgl_registrasi = '$today'";
+                                        $result_total = $config->query($sql_total);
+                                        $row_total = $result_total->fetch_assoc();
+                                        $total_antrian = $row_total['total'] ?? 0;
+
+                                        // Total antrian yang sudah dilayani (stts = 'Sudah')
+                                        $sql_sudah = "SELECT COUNT(DISTINCT reg_periksa.no_rawat) as total FROM reg_periksa WHERE reg_periksa.kd_poli = '$kd_poli' AND reg_periksa.tgl_registrasi = '$today' AND reg_periksa.stts = 'Sudah'";
+                                        $result_sudah = $config->query($sql_sudah);
+                                        $row_sudah = $result_sudah->fetch_assoc();
+                                        $total_sudah_dilayani = $row_sudah['total'] ?? 0;
                                         ?>
-                                        <p class="text-muted text-sm"><b>Sedang dilayani: </b><h4> <?php echo $sedang_dilayani; ?> </h4></p>
+                                        <p class="text-muted text-sm"><b>Antrian sedang dilayani: </b><h4> <?php echo $sedang_dilayani; ?> <?php if($nama_pasien_sedang) echo '('.$nama_pasien_sedang.')'; ?> </h4></p>
+                                        <p class="text-muted text-sm"><b>Total Antrian Pasien: </b><h4> <?php echo $total_antrian; ?> </h4></p>
                                         <p class="text-muted text-sm"><b>Total Antrian Sudah Dilayani: </b><h4> <?php echo $total_sudah_dilayani; ?> </h4></p>
                                     </div>
                                     <div class="col-5 text-center">
@@ -70,7 +78,7 @@
                                     <a href="#" class="btn btn-sm bg-teal">
                                     <i class="fas fa-comments"></i>
                                     </a>
-                                    <a href="#" class="btn btn-sm btn-primary">
+                                    <a href="main_app.php?page=view_poli_gigi" class="btn btn-sm btn-primary">
                                     <i class="fas fa-user"></i> View Profile
                                     </a>
                                 </div>

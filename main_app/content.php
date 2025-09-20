@@ -7,6 +7,12 @@ if ($page == "beranda"){
 if ($page == "poli_anak"){
   require_once("page/poli_anak.php");
 }
+if ($page == "poli_gigi"){
+  require_once("page/poli_gigi/poli_gigi.php");
+}
+if ($page == "view_poli_gigi"){
+  require_once("page/poli_gigi/view_poli_gigi.php");
+}
 if ($page == "poli_dalam"){
   require_once("page/poli_dalam.php");
 }

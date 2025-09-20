@@ -22,7 +22,7 @@ if (file_exists($envPath)) {
 }
 
 // Konfigurasi database pertama
-$server   = getenv('DB_SERVER') ?: 'localhost';
+$server   = getenv('DB_SERVER') ?: '192.168.1.4';
 $username = getenv('DB_USERNAME') ?: 'root';
 $password = getenv('DB_PASSWORD') ?: '';
 $database = getenv('DB_DATABASE') ?: 'sik9';
