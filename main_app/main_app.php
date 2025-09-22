@@ -94,9 +94,9 @@ if (isset($_GET['page'])){ $page = $_GET['page']; }
           <i class="fas fa-search"></i>
         </a>
         <div class="navbar-search-block">
-          <form class="form-inline">
+          <form class="form-inline" id="navbarSearchForm" onsubmit="return handleNavbarSearch(event)">
             <div class="input-group input-group-sm">
-              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <input class="form-control form-control-navbar" id="navbarSearchInput" type="search" placeholder="Search" aria-label="Search">
               <div class="input-group-append">
                 <button class="btn btn-navbar" type="submit">
                   <i class="fas fa-search"></i>
@@ -107,6 +107,26 @@ if (isset($_GET['page'])){ $page = $_GET['page']; }
               </div>
             </div>
           </form>
+          <script>
+          function handleNavbarSearch(e) {
+            e.preventDefault();
+            var val = document.getElementById('navbarSearchInput').value.toLowerCase();
+            if (val.includes('gigi') || val.includes('poli gigi')) {
+              window.location.href = 'main_app.php?page=poli_gigi';
+            } else if (val.includes('anak') || val.includes('poli anak')) {
+              window.location.href = 'main_app.php?page=poli_anak';
+            } else if (val.includes('dalam')) {
+              window.location.href = 'dashboard_staff.php?unit=rekap_pasien_ranap';
+            } else if (val.includes('kandungan')) {
+              window.location.href = 'dashboard_staff.php?unit=rekap_px_usia_ranap';
+            } else if (val.includes('syaraf')) {
+              window.location.href = 'dashboard_staff.php?unit=rekap_px_usia_ralan';
+            } else {
+              alert('Menu tidak ditemukan.');
+            }
+            return false;
+          }
+          </script>
         </div>
       </li>
       <li class="nav-item">

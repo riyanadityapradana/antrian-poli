@@ -118,12 +118,13 @@
         <div class="row">
             <div class="col-md-5 d-flex align-items-center justify-content-center">
                 <div>
-                    <img src="../assets/img/display/gigi_U0057.png" alt="Poli Gigi" class="doctor-img">
+                    <img src="../assets/img/display/gigi_U0052.png" alt="Poli Gigi" class="doctor-img">
                     <div class="jadwal text-center">
-                        <p style="margin-top:10px;"><b>drg. Gabila Auliana</b></p>
-                        <h4><b>POLIKLINIK GIGI & MULUT</b></h4>
+                        <p style="margin-top:10px;"><b>drg. RAHARSHANTI INGGAR HAYUNING HAPSARI, Sp.KG</b></p>
+                        <h4><b>POLIKLINIK GIGI & MULUT SPESIALIS KONSERVASI GIGI</b></h4>
                         <p><b> Jadwal Praktek :</b><br>
-                        Senin s/d Kamis<br>
+                        Senin, Rabu, Sabtu (Pasien BPJS)<br>
+                        Selasa, Kamis, Jum'at (Pasien Umum)<br>
                         Pukul 08:00 WITA s/d 13:00 WITA<br>
                         <span style="color:#d32f2f;font-size:1rem;">*Melayani pasien Umum, BPJS, Asuransi dan Pihak ke-3</span></p>
                         <p><b>Pendaftaran Online WA PI-CARE</b><br>
@@ -133,8 +134,8 @@
             </div>
             <div class="col-md-7">
                 <div class="card card-custom text-center">
-                    <h2 style="color:#1976d2;font-weight:bold;">Poli Gigi & Mulut</h2>
-                    <h4 style="color:#1976d2;">drg. Gabila Auliana</h4>
+                    <h2 style="color:#1976d2;font-weight:bold;">Poli Gigi & Mulut Spesialis Konservasi Gigi</h2>
+                    <h4 style="color:#1976d2;">drg. RAHARSHANTI INGGAR HAYUNING HAPSARI, Sp.KG</h4>
                     <div class="row mb-4 mt-4">
                         <div class="col-6">
                             <div class="yellow-box">

@@ -11,6 +11,9 @@ if ($page == "poli_gigi"){
   require_once("page/poli_gigi/poli_gigi.php");
 }
 // Veiw Poli Gigi
+if ($page == "view_poli_gigi_U0052"){
+  require_once("page/poli_gigi/view_poli_gigi_U0052.php");
+}
 if ($page == "view_poli_gigi_U0057"){
   require_once("page/poli_gigi/view_poli_gigi_U0057.php");
 }
