@@ -29,8 +29,8 @@ if ($page == "view_poli_gigi_U0065"){
 if ($page == "view_poli_gigi"){
   require_once("page/poli_gigi/view_poli_gigi.php");
 }
-if ($page == "poli_dalam"){
-  require_once("page/poli_dalam.php");
+if ($page == "poli_pd"){
+  require_once("page/poli_pd.php");
 }
 if ($page == "poli_kandungan"){
   require_once("page/poli_kandungan.php");

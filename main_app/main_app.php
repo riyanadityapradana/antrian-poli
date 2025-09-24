@@ -173,15 +173,15 @@ if (isset($_GET['page'])){ $page = $_GET['page']; }
                           <i class="nav-icon fas fa-user-injured" style="color: black;"></i>
                           <p style="font-size: 14px; color: black;">Poli Gigi</p>
                       </a>
-                      <a href="dashboard_staff.php?unit=rekap_pasien_ranap" class="nav-link">
+                      <a href="main_app.php?page=poli_pd" class="nav-link">
                           <i class="nav-icon fas fa-procedures" style="color: black;"></i>
                           <p style="font-size: 14px; color: black;">Poli Penyakit Dalam</p>
                       </a>
-                      <a href="dashboard_staff.php?unit=rekap_px_usia_ranap" class="nav-link">
+                      <a href="main_app.php?page=poli_kandungan" class="nav-link">
                           <i class="nav-icon fas fa-user-injured" style="color: black;"></i>
                           <p style="font-size: 14px; color: black;">Poli Kandungan</p>
                       </a>
-                      <a href="dashboard_staff.php?unit=rekap_px_usia_ralan" class="nav-link">
+                      <a href="main_app.php?page=poli_syaraf" class="nav-link">
                           <i class="nav-icon fas fa-user-injured" style="color: black;"></i>
                           <p style="font-size: 14px; color: black;">Poli Syaraf</p>
                       </a>
